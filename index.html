@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <div class="navbar">
+          <h3>calc</h3>
+          <div class="theme-select">
+            <div class="selector"></div>
+            <p>THEME</p>
+            <div class="theme-btns">
+              <div class="three">
+                <label for="one-two-three">1</label>
+                <input type="radio" name="one-two-three" />
+              </div>
+              <div class="three">
+                <label for="one-two-three">2</label>
+                <input type="radio" name="one-two-three" />
+              </div>
+              <div class="three">
+                <label for="one-two-three">3</label>
+                <input type="radio" name="one-two-three" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="display">
+          <div class="input-output">
+            <div class="input"><p></p></div>
+            <div class="output"><h1></h1></div>
+          </div>
+        </div>
+
+        <div class="input-btns">
+          <div class="numbers-operations">
+            <div class="key" data-key="7"><span>7</span></div>
+            <div class="key" data-key="8"><span>8</span></div>
+            <div class="key" data-key="9"><span>9</span></div>
+            <div class="key action key-action" data-key="delete">
+              <span>DEL</span>
+            </div>
+            <div class="key" data-key="4"><span>4</span></div>
+            <div class="key" data-key="5"><span>5</span></div>
+            <div class="key" data-key="6"><span>6</span></div>
+            <div class="key operator key-operator" data-key="+">
+              <span>+</span>
+            </div>
+            <div class="key" data-key="1"><span>1</span></div>
+            <div class="key" data-key="2"><span>2</span></div>
+            <div class="key" data-key="3"><span>3</span></div>
+            <div class="key operator key-operator" data-key="-">
+              <span>-</span>
+            </div>
+            <div class="key" data-key="."><span>.</span></div>
+            <div class="key" data-key="0"><span>0</span></div>
+            <div class="key operator key-operator" data-key="/">
+              <span>/</span>
+            </div>
+            <div class="key operator key-operator" data-key="*">
+              <span>x</span>
+            </div>
+          </div>
+          <div class="reset-equals">
+            <div class="key reset key-reset" data-key="reset">
+              <span>RESET</span>
+            </div>
+            <div class="key equals key-equals" data-key="="><span>=</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

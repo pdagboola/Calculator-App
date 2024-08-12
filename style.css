@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan";
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(268, 75%, 9%);
+  width: 100vw;
+}
+.main-container {
+  background-color: hsl(268, 75%, 9%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 80%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 540px;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: end;
+  padding: 15px;
+}
+.selector {
+  background-color: hsl(268, 47%, 21%);
+  z-index: 0;
+  border-radius: 10px;
+  position: relative;
+  top: 5px;
+  left: 165px;
+  width: 70px;
+  padding: 12px 10px;
+}
+input[type="radio"] {
+  display: none;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+label:after {
+  position: relative;
+  content: "";
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+  border-radius: 50%;
+  background-color: cyan;
+  display: flex;
+  flex-direction: column;
+  right: 4px;
+}
+input[type="radio"]:checked + label:after {
+  width: 15px;
+  height: 15px;
+  background-color: hsl(177, 92%, 70%);
+  border: 2px green solid;
+}
+.navbar p,
+.navbar h3 {
+  color: hsl(52, 100%, 62%);
+}
+.navbar p {
+  font-size: 12px;
+}
+.theme-select {
+  display: flex;
+  gap: 35px;
+  align-items: end;
+}
+
+.theme-btns {
+  display: flex;
+  gap: 8px;
+}
+.three {
+  display: flex;
+  flex-direction: column;
+  color: hsl(52, 100%, 62%);
+  font-size: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 1;
+  accent-color: hsl(176, 100%, 44%);
+}
+.display {
+  background-color: hsl(268, 75%, 9%);
+  box-shadow: rgba(0, 0, 0, 0.26) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: end;
+  padding: 30px;
+  border-radius: 5px;
+  height: 130px;
+}
+.input {
+  color: hsla(52, 100%, 62%, 0.821);
+}
+.output {
+  color: hsl(52, 100%, 62%);
+  font-size: 30px;
+}
+.input-output {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: end;
+}
+.input-btns {
+  background-color: hsl(268, 75%, 9%);
+  box-shadow: rgba(0, 0, 0, 0.26) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 15px;
+}
+.numbers-operations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+.reset-equals {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+.key,
+.key-reset,
+.key-equals,
+.key-action,
+.key-operator {
+  color: hsl(52, 100%, 62%);
+}
+.key,
+.key-operator {
+  background-color: hsl(268, 47%, 21%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  height: 60px;
+  border-bottom: 3px solid hsl(290, 70%, 36%);
+}
+.key-action {
+  background-color: hsl(290, 70%, 36%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  height: 60px;
+  border-bottom: 3px solid hsl(285, 91%, 52%);
+  color: white;
+}
+.key-reset {
+  background-color: hsl(290, 70%, 36%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  height: 60px;
+  border-bottom: 3px solid hsl(285, 91%, 52%);
+  color: white;
+}
+
+.key-action:hover,
+.key-reset:hover {
+  cursor: pointer;
+}
+.key-action:active,
+.key-reset:active {
+  color: white;
+  background-color: hsl(285, 85%, 49%);
+  cursor: pointer;
+}
+.key:hover,
+.key-operator:hover {
+  cursor: pointer;
+}
+.key:active,
+.key-operator:active {
+  background-color: hsl(272, 85%, 45%);
+  cursor: pointer;
+}
+.key-equals {
+  background-color: hsl(176, 100%, 44%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  height: 60px;
+  border-bottom: 3px solid hsl(177, 92%, 70%);
+  color: hsl(198, 20%, 13%);
+}
+.key-equals:active,
+.key-equals:hover {
+  cursor: pointer;
+}
+.key-equals:active {
+  background-color: hsl(177, 92%, 70%);
+}
